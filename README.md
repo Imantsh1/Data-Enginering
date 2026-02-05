@@ -62,3 +62,9 @@ Notes & Next steps
 - For large-scale scraping consider rate limiting, proxies, or an API that supports higher throughput; respect terms of service.
 - Add logging and error handling for production usage.
 - Add unit tests for transform functions (small sample JSON & expected CSV rows).
+
+**Feedback**
+
+- When you use: default_apps = ["com.aisense.otter", "com.evernote", "com.google.android.keep"] You are limiting the possibilities of your code as you list the apps to search for, use a query term rather than app id.
+- The scrapping code is designed to be run from the terminal or any command-line environment, which is not how we’re designing our pipeline
+- Think about writing with append in the reviews loop to prevent any data loss if code crashes
