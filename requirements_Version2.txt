@@ -1,0 +1,4 @@
+pandas>=1.5
+google_play_scraper>=0.2.0
+python-dateutil>=2.8
+requests>=2.0
