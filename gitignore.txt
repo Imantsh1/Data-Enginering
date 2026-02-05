@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+.env/
+__pycache__/
+
+# Data files (don't commit raw or processed data)
+App-Market-Research/data/
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+*.egg-info/
+dist/
+build/
