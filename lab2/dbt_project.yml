@@ -1,8 +1,9 @@
-name: 'lab2_pipeline'
+[cite_start]name: 'lab2_pipeline' # Matches your lab project name [cite: 124]
 version: '1.0.0'
 config-version: 2
 
-profile: 'lab2_profile' # This must match your profiles.yml later
+# This must match the profile name in your local profiles.yml file [cite: 132]
+profile: 'lab2_profile' 
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -11,7 +12,8 @@ analysis-paths: ["analysis"]
 
 models:
   lab2_pipeline:
+    # Set default materializations for clear layer separation [cite: 138]
     staging:
-      +materialized: view
+      [cite_start]+materialized: view      # Staging models will be built as views [cite: 138]
     marts:
-      +materialized: table
+      [cite_start]+materialized: table     # Serving tables will be built as tables [cite: 138]
