@@ -1,0 +1,10 @@
+repository-root/
+├── data/ (from Lab 1)
+├── src/  (from Lab 1)
+└── lab2/
+    ├── models/
+    │   ├── staging/
+    │   └── marts/
+    ├── seeds/
+    ├── dbt_project.yml
+    └── README.md
