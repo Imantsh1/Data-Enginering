@@ -1,0 +1,17 @@
+name: 'lab2_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'lab2_profile' # This must match your profiles.yml later
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+
+models:
+  lab2_pipeline:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
