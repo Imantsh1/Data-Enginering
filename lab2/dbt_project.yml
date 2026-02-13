@@ -1,9 +1,9 @@
-[cite_start]name: 'lab2_pipeline' # Matches your lab project name [cite: 124]
+[cite_start]name: 'lab2_pipeline' [cite: 124]
 version: '1.0.0'
 config-version: 2
 
-# This must match the profile name in your local profiles.yml file [cite: 132]
-profile: 'lab2_profile' 
+# Update this to match what you wrote in profiles.yml
+[cite_start]profile: 'playstore_profile' [cite: 132, 136]
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -12,8 +12,8 @@ analysis-paths: ["analysis"]
 
 models:
   lab2_pipeline:
-    # Set default materializations for clear layer separation [cite: 138]
+    # Logic to separate staging (views) from marts (tables) [cite: 138]
     staging:
-      [cite_start]+materialized: view      # Staging models will be built as views [cite: 138]
+      [cite_start]+materialized: view [cite: 138, 140]
     marts:
-      [cite_start]+materialized: table     # Serving tables will be built as tables [cite: 138]
+      [cite_start]+materialized: table [cite: 138]
