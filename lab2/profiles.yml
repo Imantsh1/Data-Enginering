@@ -1,0 +1,6 @@
+playstore_profile: # Example name
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/google_play.duckdb
