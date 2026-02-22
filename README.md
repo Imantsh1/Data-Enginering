@@ -1,3 +1,7 @@
+Project for review: located in lab2 + rapport included 
+students: Iman TACHRIFT and Wissal KHOUNATI
+
+
 # App-Market-Research
 
 A small Python-only pipeline scaffold to ingest Google Play metadata and reviews, transform into tabular CSVs, and compute simple serving metrics.
