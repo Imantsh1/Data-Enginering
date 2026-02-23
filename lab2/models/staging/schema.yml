@@ -5,17 +5,17 @@ models:
     columns:
       - name: app_id
         tests:
-          - [cite_start]unique [cite: 163]
-          - [cite_start]not_null [cite: 163]
+          - unique
+          - not_null
 
   - name: stg_playstore_reviews
     columns:
       - name: review_id
         tests:
-          - [cite_start]unique [cite: 163]
-          - [cite_start]not_null [cite: 163]
+          - unique
+          - not_null
       - name: app_id
         tests:
           - relationships:
               to: ref('stg_playstore_apps')
-              [cite_start]field: app_id [cite: 163]
+              field: app_id
